@@ -4,5 +4,7 @@
 - Remove unnecessary code.
 - Added Tailwind Css.
 - Installed daisyUI.
+- Create a NavBar.jsx component.
+- Added Routing
 
 
