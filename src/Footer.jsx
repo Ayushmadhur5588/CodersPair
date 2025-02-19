@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="fixed w-full bottom-0">
+    <div className="w-full">
       <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
         
         <nav>
