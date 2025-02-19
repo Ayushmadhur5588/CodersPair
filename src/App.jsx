@@ -1,23 +1,19 @@
-import { useState } from "react";
 import NavBar from "./NavBar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Body from "./Body";
+import Profile from "./Profile";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div>
       <BrowserRouter basename="/">
         <Routes>
-          <Route path="/" element={<div>home</div>}></Route>
-          <Route path="/login" element={NavBar}></Route>
-
-          <Route></Route>
-          <Route></Route>
+          <Route path="/" element={<Body />}>
+            <Route path="/login" element={<NavBar />} />
+            <Route path="/profile" element={<Profile />} />
+          </Route>
         </Routes>
       </BrowserRouter>
-
-      <NavBar />
     </div>
   );
 }

@@ -6,5 +6,7 @@
 - Installed daisyUI.
 - Create a NavBar.jsx component.
 - Added Routing
+- Added Outlet in Body component.
+
 
 
