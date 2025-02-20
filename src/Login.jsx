@@ -1,4 +1,9 @@
+import { useState } from "react";
+
 const Login = () => {
+  const [emailId, setEmailId] = useState("");
+  const [password, setPassword] = useState("");
+
   return (
     <div className="h-fit flex items-center mx-auto my-24 card card-border bg-base-100 w-96">
       <div className="card-body flex justfy-between">
@@ -10,6 +15,8 @@ const Login = () => {
           </div>
           <input
             type="text"
+            value={emailId}
+            onChange={(e) => setEmailId(e.target.value)}
             placeholder="enter email"
             className="input input-bordered w-[100%] max-w-xs mt-2"
           />
@@ -20,6 +27,8 @@ const Login = () => {
           </div>
           <input
             type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
             placeholder="enter password"
             className="input input-bordered w-[100%] max-w-xs mt-2"
           />
